@@ -1,0 +1,67 @@
+header.flex {
+  color: var(--white);
+  background-color: var(--footer-BG);
+  padding: 1rem;
+
+  & .logo .fa-solid {
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+  & .sign-in:hover,
+  & .register:hover {
+    border: 1px solid rgb(173, 168, 168);
+  }
+  & .cart:hover {
+    border: 1px solid rgb(173, 168, 168);
+    padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+  }
+  & .logo:hover {
+    scale: 0.95;
+  }
+}
+body {
+  color: var(--white);
+  background-color: var(--footer-BG);
+}
+form.flex {
+  flex-direction: column;
+
+  & div {
+    width: 100%;
+  }
+  & label {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: antiquewhite;
+    margin-top: 1rem;
+  }
+  & input {
+    width: 100%;
+    text-align: left;
+    border-radius: 16px;
+    margin-top: 1rem;
+    height: 50px;
+    outline: none;
+  }
+
+  & input::placeholder {
+    color: var(--footer-BG);
+  }
+  & input:hover {
+    box-shadow: 0px 2px 2px 0.1rem rgb(212, 63, 63);
+  }
+}
+main {
+  & .carete-accont {
+    margin-top: 3rem;
+    background-color: rgb(212, 63, 63);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-transform: capitalize;
+  }
+  & .carete-accont:hover {
+    border: 2px solid var(--white);
+    background-color: transparent;
+  }
+}

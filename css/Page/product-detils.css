@@ -1,0 +1,67 @@
+header.flex {
+  color: var(--white);
+  background-color: var(--footer-BG);
+  padding: 1rem;
+
+  & .logo .fa-solid {
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+  & .sign-in:hover,
+  & .register:hover {
+    border: 1px solid rgb(173, 168, 168);
+  }
+  & .cart:hover {
+    border: 1px solid rgb(173, 168, 168);
+    padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+  }
+  & .logo:hover {
+    scale: 0.95;
+  }
+}
+
+main.flex {
+  border-radius: 0.4rem;
+  box-shadow: 0 -2px 18px 10px rgba(0, 0, 0, 0.23);
+  text-align: left;
+  max-width: 800px;
+  background-color: var(--white);
+  & img {
+    width: 40%;
+    border-radius: 0.4rem;
+  }
+  & .product-details {
+    margin-inline: 1.1rem;
+  }
+  & .price {
+    font-size: 1.22rem;
+    font-weight: bold;
+    color: var(--red-button);
+  }
+  & .description {
+    margin-block: 1.2rem;
+    line-height: 1.44rem;
+  }
+  & .add-to-cart {
+    background-color: var(--blue-button);
+    color: var(--white);
+    font-size: 0.9rem;
+    border-radius: 4px;
+    padding: 6px 8px;
+    gap: 0.33rem;
+  }
+  & .add-to-cart i {
+    color: var(--white);
+  }
+}
+@media (max-width: 800px) {
+  main.flex {
+    flex-wrap: wrap;
+    & img {
+      margin-inline: auto;
+      width: 260px;
+      margin-top: 2.5re;
+      margin-bottom: 1.3rem;
+    }
+  }
+}

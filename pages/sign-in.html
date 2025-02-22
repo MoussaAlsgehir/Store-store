@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-in</title>
+  <!-- header style -->
+  <link rel="stylesheet" href="../css/header.css">
+  <!-- globle style -->
+  <link rel="stylesheet" href="../css/globle.css">
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="../css/all.min.css" />
+  <!-- favicons -->
+  <link rel="shortcut icon" href="../images/bag-shopping-solid.svg" type="image/x-icon">
+  <!-- style footer -->
+  <link rel="stylesheet" href="../css/Page/footer.css">
+  <!-- sign in  -->
+  <link rel="stylesheet" href="../css/page/sign-in.css">
+</head>
+
+<body style="height: 100vh; display: grid;
+ grid-template-rows: auto 1fr auto;
+ align-items:center;">
+  <header class="flex">
+    <a href="/index.html" class="logo">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span style="font-weight: bold;">AWU</span>
+      <p>Shopping</p>
+    </a>
+    <div class="navbar">
+      <a class="cart" href="../pages/cart.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+        $0.00</a>
+      <a class="sign-in" href="#" style="border: 2px solid;">
+        <i class="fa-solid fa-right-to-bracket"></i>
+        Sign-in
+      </a>
+      <a class="register" href="../pages/register.html">
+        <i class="fa-solid fa-user-plus"></i>
+        Register</a>
+    </div>
+  </header>
+
+  <main>
+    <form cLass="flex">
+      <div>
+        <label for="email">email address</label>
+        <input type="email" name="email" placeholder="Enter Email" id="email" required>
+      </div>
+      <div>
+        <label for="Password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter Password" required>
+      </div>
+    </form>
+    <button class="carete-accont">carete account</button>
+  </main>
+
+
+  <!-- footer page -->
+  <footer>
+    Designed and developed by <span>Moussa Alsgehir</span>
+    &copy; 2024.
+  </footer>
+
+</body>
+
+</html>

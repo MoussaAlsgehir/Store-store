@@ -1,0 +1,97 @@
+header.flex {
+  color: var(--white);
+  background-color: var(--footer-BG);
+  padding: 1rem;
+
+  & .logo .fa-solid {
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+  & .sign-in:hover,
+  & .register:hover {
+    border: 1px solid rgb(173, 168, 168);
+  }
+  & .cart:hover {
+    border: 1px solid rgb(173, 168, 168);
+    padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+  }
+  & .logo:hover {
+    scale: 0.95;
+  }
+}
+
+section.cart article.flex {
+  background-color: var(--white);
+  border-top: 2px solid var(--blue-button);
+  margin-top: 1.8rem;
+  justify-content: space-between;
+  max-width: 450px;
+  margin-inline: auto;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 2px 1rem 5px rgba(0, 0, 0, 0.23);
+
+  & .fa-trash-can {
+    color: var(--red-button);
+    font-size: 1rem;
+  }
+  & button.decrease {
+    color: var(--blue-button);
+    font-size: 1.9rem;
+  }
+  & .quantity {
+    background-color: var(--blue-button);
+    color: var(--white);
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 0.4rem;
+  }
+  & button.increase {
+    color: var(--blue-button);
+    font-size: 1.4rem;
+  }
+}
+
+button.clear {
+  background-color: var(--red-button);
+  color: var(--white);
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+}
+
+section.summary {
+  background-color: var(--white);
+  box-shadow: 0 2px 1rem 5px rgba(0, 0, 0, 0.23);
+  width: 233px;
+  margin-inline: auto;
+  margin-top: 2.5rem;
+  border-radius: 4px;
+  & h2 {
+    padding-block: 0.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  }
+  & div.flex {
+    padding-inline: 0.5rem;
+    margin-block: 0.6rem;
+    justify-content: space-between;
+  }
+  & button.checkout {
+    width: 100%;
+    background-color: var(--blue-button);
+    color: var(--white);
+    padding-block: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  & a {
+    padding-block: 0.5rem;
+    color: var(--red-button);
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,78 @@
+header.flex {
+  justify-content: space-between;
+  padding-inline: 10%;
+  padding-top: 1.2rem;
+
+  & .sign-in {
+    margin-inline: 1rem;
+  }
+
+  & .sign-in,
+  & .register {
+    border: 1px solid var(--bodyFont);
+    padding: 0.44rem 1rem;
+    border-radius: 55px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  & .sign-in:hover,
+  & .register:hover,
+  & .sign-in:hover .fa-solid,
+  & .register:hover .fa-solid {
+    background-color: var(--bodyFont);
+    color: var(--blue);
+  }
+  & .navbar .fa-solid {
+    margin-right: 0.3rem;
+  }
+  & .cart {
+    background-color: var(--bodyFont);
+    color: var(--blue);
+    padding: 0.44rem 1.1rem 0.44rem 0.6rem;
+    border-radius: 55px;
+    position: relative;
+  }
+  & .cart .fa-solid {
+    color: var(--blue);
+  }
+  & .cart:after {
+    content: "2";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -0.2rem;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(212, 63, 63);
+    clip-path: circle(50%);
+    font-size: 0.9rem;
+    color: var(--bodyBG);
+  }
+
+  /* left header */
+  & .fa-bag-shopping {
+    font-size: 2rem;
+  }
+  & .logo p {
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 600px) {
+  header.flex {
+    justify-content: center;
+    padding: 0;
+
+    & .logo {
+      display: none;
+    }
+    & .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 1rem;
+    }
+  }
+}
